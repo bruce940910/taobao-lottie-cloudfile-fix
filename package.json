@@ -1,0 +1,39 @@
+{
+  "name": "taobao-lottie-cloudfile-fix",
+  "version": "0.0.1",
+  "description": "lottie 动画库适配淘宝小程序的版本。",
+  "main": "miniprogram_dist/index.js",
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "lint": "eslint \"src/**/*.js\"",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "miniprogram": "miniprogram_dist",
+  "keywords": [
+    "lottie",
+    "lottie-web",
+    "miniprogram",
+    "淘宝小程序",
+    "淘宝小部件"
+  ],
+  "files": [
+    "miniprogram_dist"
+  ],
+  "author": "jerry-bruce",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.1.0",
+    "eslint-loader": "^2.2.1",
+    "string-replace-loader": "^2.2.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "lottie-web": "5.12.2"
+  }
+}
