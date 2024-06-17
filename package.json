@@ -1,6 +1,6 @@
 {
   "name": "taobao-lottie-cloudfile-fix",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "lottie 动画库适配淘宝小程序的版本。",
   "main": "miniprogram_dist/index.js",
   "scripts": {
