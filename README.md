@@ -80,7 +80,7 @@ lottie.loadAnimation({
 - 本项目是以 npm 的方式依赖原 lottie-web 项目，若原项目有新版本，可直接改变依赖的版本号。
 - 本项目依赖手淘  9.7.0 里性能更好的 canvas 实现，由于还有些小问题没有正式开放，但目前用在此处暂无发现问题。
 - 由于小程序本身不支持动态执行脚本，因此 lottie 的 expression 功能也是不支持的。
-- 本项目基于@tbminiapp/lottie-miniapp, 与原项目保持一致，只是修复一些影响使用的问题，如果改变 lottie-web 版本号重新构建会导致修复的代码被覆盖，最终导致修复失败，如果需要修改 lottie-web 可与我联系
+- 本项目基于@tbminiapp/lottie-miniapp, 与原项目保持一致，只是修复一些影响使用的问题，如果改变 lottie-web 版本号重新构建会导致修复的代码被覆盖，最终导致修复失败，如果需要修改 lottie-web 版本 可与我联系
 
 ## 修复
 
