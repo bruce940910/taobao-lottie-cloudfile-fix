@@ -19,19 +19,23 @@ npm install --save taobao-lottie-cloudfile-fix
 2. 传入 canvas 对象用于适配
 
 ```
-<canvas id="canvas" width="610" height="610" class="canvas" type="webgl" />
+<canvas id="canvas"  type="2d" onReady="onCanvasReady" style="width: 300px; height: 500px"></canvas>
+
 ```
 
 ```javascript
 import lottie from "taobao-lottie-cloudfile-fix";
-import animationData from "../../json/catrim";
+import animationData from "../../json/catrim"; // 实际文件路径
 
 Page({
   onReady() {},
-  init() {
-    this.canvas = my._createCanvas({
+  onCanvasReady() {
+    this.canvas = my.createCanvas({
       id: "canvas",
       success: (canvas) => {
+        ar systemInfo = my.getSystemInfoSync();
+        canvas.width = 300 * systemInfo.pixelRatio;
+        canvas.height = 500 * systemInfo.pixelRatio;
         this.canvas = canvas;
         console.log("canvas=====", canvas);
         lottie.setup(canvas);
